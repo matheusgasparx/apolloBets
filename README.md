@@ -1,3 +1,7 @@
+<h1><i>Projeto de plataforma em VUE. &reg; </i></h1>
+
+<br/>
+
 # apollo-bet
 
 ## Project setup
