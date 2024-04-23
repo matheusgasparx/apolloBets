@@ -1,7 +1,7 @@
 <template>
   <div>
     <footer>
-      <p>&copy; 2024 Plataforma de Apostas. Todos os direitos reservados.</p>
+      <p>ApolloBets | Todos os direitos reservados. 2024  &reg;</p>
     </footer>
   </div>
 </template>

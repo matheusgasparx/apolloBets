@@ -1,7 +1,7 @@
 <template>
   <div>
-    <Topo></Topo>
-    <Conteudo></Conteudo>
+    <Topo @navegar="componente = $event"></Topo>
+    <Conteudo v-if="visibilidade" :conteudo="componente"></Conteudo>
     <Rodape></Rodape>
   </div>
 </template>
@@ -13,6 +13,10 @@ import Rodape from './components/layouts/Rodape.vue';
 
 export default {
   name: 'App',
+  data: () => ({
+    visibilidade: true,
+    componente: 'Esporte'
+  }),
   components: {
     Conteudo,
     Rodape,
@@ -22,12 +26,4 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
