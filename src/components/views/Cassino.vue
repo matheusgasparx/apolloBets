@@ -1,12 +1,16 @@
 <template>
-  <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati adipisci ab nam commodi. Non omnis tempora quia id harum itaque eum vero facere, dolore consequuntur eos atque dolores. Magni, quidem!</p>
+  <div class="container py-4">
+    <div class="row">
+        <div class="col">
+            <h4>Cassinos Aqui</h4>
+        </div>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'cassino'
+    name: 'Cassinos'
 }
 </script>
 

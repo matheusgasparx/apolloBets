@@ -21,15 +21,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-4 mb-lg-0">
             <li class="nav-item p-2 mt-2">
-              <a class="nav-link" @click="navegarPara()" >Esportes</a>
+              <a class="nav-link" @click="navegarPara('Esportes')" >Esportes</a>
             </li>
             
             <li class="nav-item p-2 mt-2">
-              <a class="nav-link" @click="navegarPara()" >Cassinos</a>
+              <a class="nav-link" @click="navegarPara('Cassinos')" >Cassinos</a>
             </li>
             
             <li class="nav-item p-2 mt-2">
-              <a class="nav-link" @click="navegarPara()" >Cassinos Online</a>
+              <a class="nav-link" @click="navegarPara('CassinosAoVivo')" >Cassinos Ao Vivo</a>
             </li>
           </ul>
 

@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Conteudo from './components/layouts/Conteudo.vue';
-import Topo from './components/layouts/Topo.vue';
-import Rodape from './components/layouts/Rodape.vue';
+import Conteudo from '@/components/layouts/Conteudo.vue';
+import Topo from '@/components/layouts/Topo.vue';
+import Rodape from '@/components/layouts/Rodape.vue';
 
 export default {
   name: 'App',
