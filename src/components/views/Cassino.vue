@@ -1,16 +1,21 @@
 <template>
-  <div class="container py-4">
-    <div class="row">
-        <div class="col">
-            <h4>Cassinos Aqui</h4>
-        </div>
+  <div>
+    {{ conteudo }}
+    <div>
+      <component :is="conteudo"></component>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'Cassinos'
+    name: 'Cassinos',
+    props: {
+      conteudo: {
+        type: String,
+        required: true
+      }
+    }
 }
 </script>
 

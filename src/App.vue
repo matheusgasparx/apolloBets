@@ -1,5 +1,6 @@
 <template>
   <div>
+    {{ componente }}
     <Topo @navegar="componente = $event"></Topo>
     <Conteudo v-if="visibilidade" :conteudo="componente"></Conteudo>
     <Rodape></Rodape>
@@ -15,7 +16,7 @@ export default {
   name: 'App',
   data: () => ({
     visibilidade: true,
-    componente: 'Esporte'
+    componente: 'Esportes'
   }),
   components: {
     Conteudo,
