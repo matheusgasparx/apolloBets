@@ -2,7 +2,7 @@
 
 <br/>
 
-# apollo-bet
+# apollobets
 
 ## Project setup
 ```
