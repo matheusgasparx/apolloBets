@@ -61,25 +61,23 @@ export default {
 </script>
 
 <style scoped>
-  
+
   #header {
-    background-color: rgba(122, 122, 122, 0.87);
+    background-color: rgb(197, 207, 197);
+    border-bottom: 5px solid greenyellow;
+    font-family: Arial, Helvetica, sans-serif ;
   }
 
   .nav-link {
     cursor: pointer;
     font-weight: 700;
     text-transform: uppercase; 
-    color: rgb(48, 189, 55);
-    text-shadow: 0px 0px 10px rgb(19, 179, 27),
-                 0px 0px 20px rgb(19, 179, 27),
-                 0px 0px 30px rgb(19, 179, 27),
-                 0px 0px 400px rgb(19, 179, 27)
+    color: rgb(32, 73, 34);
   }
 
   .navbar-brand img {
     width: 115px
-
+  }
   /*
   nav ul {
     list-style-type: none;
@@ -96,10 +94,13 @@ export default {
     color: #fff;
     text-decoration: none;
   }
-  a:hover {
-    color: rgb(255, 255, 255);
-  } 
   */
-}
+  a:hover {
+    text-shadow: 0px 0px 10px rgb(173, 255, 47),
+                 0px 0px 20px rgb(19, 179, 27),
+                 0px 0px 30px rgb(19, 179, 27), 
+                 0px 0px 400px rgb(19, 179, 27)
+  } 
+
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="all">
     <Esporte />
   </div>
 </template>
@@ -16,4 +16,8 @@ export default {
 </script>
 
 <style>
+  .all {
+    background-color: rgb(47, 80, 47);
+    border-top: 5px solid greenyellow ;
+  }
 </style>
