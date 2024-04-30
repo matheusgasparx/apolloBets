@@ -67,6 +67,14 @@
     <div class="row mt-5">
       <div class="row">
         <div class="col-6">
+          <Bilhete />
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="row">
+        <div class="col-6">
           <Jogos 
           liga="Serie A"
           time1="Palmeiras"
@@ -91,12 +99,12 @@
 </template>
 
 <script>
-import Jogos from "@/components/comuns/Jogos.vue";
+ import Jogos from "@/components/comuns/Jogos.vue";
 
 export default {
   name: "esportes",
   components: {
-    Jogos,
+     Jogos
   },
   mounted() {
     setInterval(this.nextSlide, 4000);

@@ -9,3 +9,7 @@ tolocalestring('pt-br')
 utilizar vuex para alternar entre - esportes / cassino / cassinonline - pagina de login e registro 
 
 criar pagina de login e registro
+
+ ///
+
+adicionar também tim e lazy na aba cadastro.

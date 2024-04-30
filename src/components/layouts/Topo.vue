@@ -35,11 +35,11 @@
 
           <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
             <li class="nav-item p-2 mt-2">
-              <a class="nav-link" >Cadastrar</a>
+              <a class="nav-link" @click="navegarPara('Registrar')" >Registrar</a>
             </li>
             
             <li class="nav-item p-2 mt-2 ml-4">
-              <a class="nav-link" >Login</a>
+              <a class="nav-link" @click="navegarPara('Login')" >Login</a>
             </li>
           </ul>
         </div>
@@ -49,6 +49,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'topoPadrao',
   methods: {

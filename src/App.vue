@@ -10,7 +10,7 @@
 
 <script>
 import Conteudo from '@/components/layouts/Conteudo.vue';
-import Bilhete from './components/comuns/Bilhete.vue';
+import Bilhete from '@/components/comuns/Bilhete.vue';
 import Topo from '@/components/layouts/Topo.vue';
 import Rodape from '@/components/layouts/Rodape.vue';
 
@@ -21,9 +21,9 @@ export default {
     componente: 'Esportes'
   }),
   components: {
+    Bilhete,
     Conteudo,
     Rodape,
-    Bilhete,
     Topo
   }
 }
