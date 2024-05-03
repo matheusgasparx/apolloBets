@@ -1,21 +1,12 @@
 <template>
-  <div>
-    {{ conteudo }}
     <div>
-      <component :is="conteudo"></component>
+      <h3>Cassino</h3>
     </div>
-  </div>
 </template>
 
 <script>
 export default {
-    name: 'Cassinos',
-    props: {
-      conteudo: {
-        type: String,
-        required: true
-      }
-    }
+    name: 'Cassino'
 }
 </script>
 

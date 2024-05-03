@@ -13,3 +13,7 @@ criar pagina de login e registro
  ///
 
 adicionar também tim e lazy na aba cadastro.
+
+//
+
+criar to-do-list que insire os jogos no bilhete, e que tmabém multipliquem o valor da odds.

@@ -64,6 +64,7 @@
         </button>
     </div>
 
+<!-- MINHA APOSTA -->
     <div class="row mt-5">
       <div class="row">
         <div class="col-6">
@@ -72,27 +73,22 @@
       </div>
     </div>
 
-    <div class="row mt-5">
-      <div class="row">
-        <div class="col-6">
+<!-- CARD DE BILHETES -->
+    <div style="display: flex; flex-direction: row;">
+        <div style="flex-basis: 50%; margin: 5px;">
           <Jogos 
           liga="Serie A"
           time1="Palmeiras"
           time2="Flamengo"
-          Odds1='1.25'
-          Odds2='2.89'
           ></Jogos>
         </div>
-        <div class="col-6">
+        <div style="flex-basis: 50%; margin: 5px;">
           <Jogos 
           liga="Premier League"
           time1="Real Madrid"
           time2="Manchester City"
-          Odds1='2.00'
-          Odds2='1.35'
           ></Jogos>
         </div>
-      </div>
     </div>
 
   </div>
@@ -110,7 +106,7 @@ export default {
     setInterval(this.nextSlide, 4000);
   },
   methods: {
-    nextSlide() {      
+    nextSlide() {
       let carousel = document.getElementById("carousel");
       
       let carouselInstance = new carousel.Carousel(carousel);
