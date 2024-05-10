@@ -17,3 +17,20 @@ adicionar também tim e lazy na aba cadastro.
 //
 
 criar to-do-list que insire os jogos no bilhete, e que tmabém multipliquem o valor da odds.
+
+//
+
+inserir em routes, o css exact-active
+
+//
+
+adicionar alias, para derivados das rotas
+ou path para redirecionar as rotas
+
+// 
+
+verificar a possibilidade de inserir o beforeEach para os cassinos, para que logue antes de ter acesso aos jogos
+
+//
+
+utilizar também na tela de cadastro o beforeRouteLeave, para caso o usuario esteja criando a conta e sair, confirmar seu cadastro
