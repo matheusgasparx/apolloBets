@@ -34,3 +34,7 @@ verificar a possibilidade de inserir o beforeEach para os cassinos, para que log
 //
 
 utilizar também na tela de cadastro o beforeRouteLeave, para caso o usuario esteja criando a conta e sair, confirmar seu cadastro
+
+// 
+
+adicionar o i18n do nuxt, para traduzir e disponibilizar o pt-br e o en
