@@ -1,9 +1,10 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <!-- navbar navbar-expand-lg bg-body-tertiary -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0">
       <div id="header" class="container-fluid">
         <a class="navbar-brand">
-          <img src="//apollo-bets.com/cdn/shop/files/updated_logo_-_Apollo_Bets.png?v=1697529753" alt="apollo" />
+          <img src="@\assets\imgs\logotext.png" alt="apollobets" />
         </a>
 
         <button
@@ -64,8 +65,9 @@ export default {
 <style scoped>
 
   #header {
-    background-color: rgb(197, 207, 197);
-    border-bottom: 5px solid greenyellow;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 5px solid rgb(19, 179, 27);
+    border-top: 5px solid rgb(19, 179, 27);
     font-family: Arial, Helvetica, sans-serif ;
   }
 
@@ -77,7 +79,7 @@ export default {
   }
 
   .navbar-brand img {
-    width: 115px
+    width: 150px;
   }
   /*
   nav ul {

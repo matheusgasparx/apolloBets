@@ -38,3 +38,17 @@ utilizar também na tela de cadastro o beforeRouteLeave, para caso o usuario est
 // 
 
 adicionar o i18n do nuxt, para traduzir e disponibilizar o pt-br e o en
+
+// 
+
+Fazer uma api json fake contendo jogos para ser inseridos no front, com liga, data e hora e times
+
+// 
+
+adicionar o seoMeta
+--
+
+### Fake database from jogos
+```
+json-server --watch --port 5000 db-jogos.json
+```

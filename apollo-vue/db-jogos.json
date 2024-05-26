@@ -1,0 +1,69 @@
+{
+    "events": [
+      {
+        "id": 1,
+        "teams": {
+          "home": "Flamengo",
+          "away": "Palmeiras"
+        },
+        "league": "Brasileirão Série A",
+        "odds": {
+          "homeWin": 2.10,
+          "draw": 3.50,
+          "awayWin": 3.20
+        }
+      },
+      {
+        "id": 2,
+        "teams": {
+          "home": "Corinthians",
+          "away": "São Paulo"
+        },
+        "league": "Brasileirão Série A",
+        "odds": {
+          "homeWin": 2.45,
+          "draw": 3.10,
+          "awayWin": 2.85
+        }
+      },
+      {
+        "id": 3,
+        "teams": {
+          "home": "Barcelona",
+          "away": "Real Madrid"
+        },
+        "league": "La Liga",
+        "odds": {
+          "homeWin": 2.00,
+          "draw": 3.75,
+          "awayWin": 3.40
+        }
+      },
+      {
+        "id": 4,
+        "teams": {
+          "home": "Manchester United",
+          "away": "Liverpool"
+        },
+        "league": "Premier League",
+        "odds": {
+          "homeWin": 2.80,
+          "draw": 3.30,
+          "awayWin": 2.50
+        }
+      },
+      {
+        "id": 5,
+        "teams": {
+          "home": "PSG",
+          "away": "Lyon"
+        },
+        "league": "Ligue 1",
+        "odds": {
+          "homeWin": 1.70,
+          "draw": 4.00,
+          "awayWin": 4.50
+        }
+      }
+    ]
+  }
