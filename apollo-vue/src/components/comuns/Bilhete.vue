@@ -43,7 +43,6 @@ export default {
 <style scoped>
   .bilheteStyle {
     position: absolute;
-    background-color: rgb(47, 80, 47);
     z-index: 1;
     bottom: 25px;
     right: 20px;

@@ -1,12 +1,19 @@
 criar sessão de bilhetes - utilizando localStorage, JSON.parse e JSON.stringify
 
+//
+
 já deixar um bilhete estatico cadastrado
+
+//
 
 inserir tambem o new Date ao bilhete, para registrar a data que o bilhete foi realizado
 tolocalestring('pt-br')
 
+//
 
 utilizar vuex para alternar entre - esportes / cassino / cassinonline - pagina de login e registro 
+
+//
 
 criar pagina de login e registro
 

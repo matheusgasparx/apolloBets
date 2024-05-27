@@ -78,19 +78,14 @@
 
 <!-- CARD DE BILHETES -->
     <div style="display: flex; flex-direction: row;">
-        <div style="flex-basis: 50%; margin: 5px;">
-          <Jogos 
-          liga="Serie A"
-          time1="Palmeiras"
-          time2="Flamengo"
-          ></Jogos>
+        <div style="flex-basis: 50%; margin: 10px;">
+          <Jogos></Jogos>
         </div>
-        <div style="flex-basis: 50%; margin: 5px;">
-          <Jogos 
-          liga="Premier League"
-          time1="Real Madrid"
-          time2="Manchester City"
-          ></Jogos>
+        <div style="flex-basis: 50%; margin: 10px;">
+          <Jogos></Jogos>
+        </div>
+        <div style="flex-basis: 50%; margin: 10px;">
+          <Jogos></Jogos>
         </div>
     </div>
 
@@ -105,6 +100,7 @@ export default {
   components: {
      Jogos
   },
+  /*
   mounted() {
     setInterval(this.nextSlide, 4000);
   },
@@ -116,6 +112,7 @@ export default {
       carouselInstance.next();
     }
   }
+  */
 };
 </script>
 
