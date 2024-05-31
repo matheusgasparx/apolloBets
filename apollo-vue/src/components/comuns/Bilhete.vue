@@ -2,7 +2,7 @@
   <div class="card">
     <div class="bilheteStyle">
       <button
-        class="btn btn-success"
+        class="btn btn-primary"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasRight"
@@ -29,21 +29,40 @@
           aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body">...</div>
+
+
+      <div>
+        <h4>..</h4>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
-  name: "Bilhete"
+  name: "Bilhete",
+
+  methods: {
+    oddTotal() {
+      var total = 0
+      this.betsNoBilhete.forEach(i => {
+        total += i.odds * i.quantity
+      })
+      return total.toFixed(2)
+    }
+  },
+  computed: mapState([
+    'betsNoBilhete'
+  ])
 };
 </script>
 
 <style scoped>
   .bilheteStyle {
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 1050;
     bottom: 25px;
     right: 20px;
   }

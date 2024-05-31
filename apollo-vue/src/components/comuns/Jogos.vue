@@ -5,9 +5,9 @@
         <div class="card-body">
           <h6 class="card-title">{{ d.league }}</h6>
           <div class="d-flex justify-content-between">
-            <a href="#" class="btn btn-success">{{ d.teams.home }}</a>
-            <a href="#" class="btn btn-warning">X</a>
-            <a href="#" class="btn btn-success">{{ d.teams.away }}</a>
+            <button class="btn btn-success" @click="addNoBilhete(d.teams.home, d.odds.homeWin)"> {{ d.teams.home }}</button>
+            <button class="btn btn-warning" @click="addNoBilhete('Draw', d.odds.draw)">X</button>
+            <button class="btn btn-success" @click="addNoBilhete(d.teams.away, d.odds.awayWin)">{{ d.teams.away }}</button>
           </div>
           <div class="mt-3 d-flex justify-content-between">
             <span class="badge bg-secondary">{{ d.odds.homeWin }}</span>
@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: "Jogos",
   data() {
@@ -39,7 +41,21 @@ export default {
           console.error("Error fetching data:", error);
         });
     },
+    addNoBilhete(team, odd) {
+      const bet = {
+        team: team,
+        odd: odd,
+        id: this.dados.length + 1 // você pode usar um id gerado de outra forma
+      };
+      this.$store.dispatch('addNoBilhete', bet);
+    },
+    estaNoBilhete(bet) {
+      return this.betsNoBilhete.find(i => i.id == bet.id);
+    }
   },
+  computed: mapState([
+    'betsNoBilhete'
+  ]),
   created() {
     this.getDadosApi();
   },

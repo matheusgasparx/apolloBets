@@ -4,9 +4,11 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary pt-0">
       <div id="header" class="container-fluid">
         <a class="navbar-brand">
-          <img src="@\assets\imgs\logotext.png" alt="apollobets" />
+          <img src="@/assets/imgs/logotext.png" alt="apollobets" />
         </a>
-
+        
+        <div class="vertical-bar"></div>
+        
         <button
           class="navbar-toggler"
           type="button"
@@ -18,29 +20,22 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-4 mb-lg-0">
             <li class="nav-item p-2 mt-2">
-              <a class="nav-link" @click="navegarPara('Esportes')" >Esportes</a>
+              <a class="nav-link" @click="navegarPara('Esportes')">Esportes</a>
             </li>
-            
             <li class="nav-item p-2 mt-2">
-              <a class="nav-link" @click="navegarPara('Cassinos')" >Cassinos</a>
-            </li>
-            
-            <li class="nav-item p-2 mt-2">
-              <a class="nav-link" @click="navegarPara('CassinosAoVivo')" >Cassinos Ao Vivo</a>
+              <a class="nav-link" @click="navegarPara('Cassinos')">Cassinos</a>
             </li>
           </ul>
-
           <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
             <li class="nav-item p-2 mt-2">
-              <a class="nav-link" @click="navegarPara('Registrar')" >Registrar</a>
+              <a class="nav-link" @click="navegarPara('Registrar')">Registrar</a>
             </li>
-            
             <li class="nav-item p-2 mt-2 ml-4">
-              <a class="nav-link" @click="navegarPara('Login')" >Login</a>
+              <a class="nav-link" @click="navegarPara('Login')">Login</a>
             </li>
           </ul>
         </div>
@@ -50,60 +45,46 @@
 </template>
 
 <script>
-
 export default {
   name: 'topoPadrao',
   methods: {
     navegarPara(event) {
-      console.log('chamou')
-      this.$emit('navegar', event)
+      this.$emit('navegar', event);
     }
   }
-}
+};
 </script>
 
 <style scoped>
+#header {
+  background-color: rgb(255, 255, 255);
+  border-bottom: 5px solid rgb(19, 179, 27);
+  border-top: 5px solid rgb(19, 179, 27);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  #header {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 5px solid rgb(19, 179, 27);
-    border-top: 5px solid rgb(19, 179, 27);
-    font-family: Arial, Helvetica, sans-serif ;
-  }
+.nav-link {
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(32, 73, 34);
+}
 
-  .nav-link {
-    cursor: pointer;
-    font-weight: 700;
-    text-transform: uppercase; 
-    color: rgb(32, 73, 34);
-  }
+.navbar-brand img {
+  width: 150px;
+}
 
-  .navbar-brand img {
-    width: 150px;
-  }
-  /*
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  */
-  a:hover {
-    text-shadow: 0px 0px 10px rgb(173, 255, 47),
-                 0px 0px 20px rgb(19, 179, 27),
-                 0px 0px 30px rgb(19, 179, 27), 
-                 0px 0px 400px rgb(19, 179, 27)
-  } 
+.vertical-bar {
+  width: 2px;
+  height: 35px; 
+  background-color: rgb(19, 179, 27);
+  margin: auto 20px;
+}
 
-
+a:hover {
+  text-shadow: 0px 0px 10px rgb(173, 255, 47),
+               0px 0px 20px rgb(19, 179, 27),
+               0px 0px 30px rgb(19, 179, 27),
+               0px 0px 40px rgb(19, 179, 27);
+}
 </style>
