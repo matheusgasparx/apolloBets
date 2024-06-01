@@ -28,9 +28,16 @@ export default {
   data() {
     return {
       dados: null,
+      // bet: []
     };
   },
   methods: {
+    // mounted() {
+    //   fetch("http://localhost:5000/events")
+    //     .then(response => response.json)
+    //     .then(dados => this.dados = dados)
+    // },
+
     getDadosApi() {
       fetch("http://localhost:5000/events")
         .then((response) => response.json())
@@ -38,7 +45,7 @@ export default {
           this.dados = response;
         })
         .catch((error) => {
-          console.error("Error fetching data:", error);
+          console.error("Bola fora! A página não está disponível: ", error);
         });
     },
     addNoBilhete(team, odd) {

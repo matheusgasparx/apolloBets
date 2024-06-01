@@ -11,61 +11,69 @@
         Seu Bilhete
       </button>
     </div>
-
     <div
       class="offcanvas offcanvas-end"
       tabindex="-1"
       id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
     >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasRightLabel">
-          Minhas Apostas
-        </h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
+      <h3 class="m-5">Bilhete da aposta: </h3>
+      <div class="container-center">
+        <div class="card" style="width: 20rem">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Primeira Bet</li>
+            <li class="list-group-item">Segunda Bet</li>
+            <li class="list-group-item">Terceira Bet</li>
+          </ul>
+        </div>
       </div>
 
-
-      <div class="m-10">
-        <h4>..</h4>
-      </div>
-
-
+      <span class="card-footer mt-2" style="width: 100vh">
+        <input class="mt-1" type="number" />
+        <br />
+      </span>
+      <span class="card-footer mt-2" style="width: 100vh"> Total Win: </span>
+      <hr>
+      <span>
+        <input type="radio" class="m-3" disabled> Aceitar mudança de Odds.
+      </span>
+      <Button class="btn btn-success mt-2">FAZER APOSTA</Button>
     </div>
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapState } from "vuex";
 
 export default {
   name: "Bilhete",
 
   methods: {
     oddTotal() {
-      var total = 0
-      this.betsNoBilhete.forEach(i => {
-        total += i.odds * i.quantity
-      })
-      return total.toFixed(2)
-    }
+      var total = 0;
+      this.betsNoBilhete.forEach((i) => {
+        total += i.odds * i.quantity;
+      });
+      return total.toFixed(2);
+    },
   },
-  computed: mapState([
-    'betsNoBilhete'
-  ])
+  computed: mapState(["betsNoBilhete"]),
 };
 </script>
 
 <style scoped>
-  .bilheteStyle {
-    position: fixed;
-    z-index: 1050;
-    bottom: 25px;
-    right: 20px;
-  }
+.bilheteStyle {
+  position: fixed;
+  z-index: 1050;
+  bottom: 25px;
+  right: 20px;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
 </style>
+
