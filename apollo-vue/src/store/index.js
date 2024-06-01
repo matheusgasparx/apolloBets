@@ -10,15 +10,15 @@ export default createStore({
         loadBets(state, bets) {
             state.bets = bets
         },
-        loadBilhete() {
-            state.betsNoBilhete = bets
+        loadBilhete(state, betsNoBilhete) {
+            state.betsNoBilhete = betsNoBilhete
         },
         addNoBilhete(state, bet) {
             state.betsNoBilhete.push(bet)
             localStorage.setItem("betsNoBilhete", JSON.stringify(state.betsNoBilhete))
         },
         removeDoBilhete(state, betID) {
-            var bilheteAtualizado = state.betsNoBilhete.filter(i => betID != i.id)
+            const bilheteAtualizado = state.betsNoBilhete.filter(i => betID != i.id)
             state.betsNoBilhete = bilheteAtualizado
             localStorage.setItem('betsNoBilhete', JSON.stringify(state.betsNoBilhete))
         }
@@ -26,15 +26,16 @@ export default createStore({
     actions: {
         loadBets({ commit }) {
             axios
-                .get('apollo-vue/babel.config.js')
+                .get('http://localhost:5000/events')
                 .then(res => {
                     commit('loadBets', res.data)
                 })
         },
 
         loadBilhete({ commit }) {
-            if (localStorage.getItem('betsNoBilhete')) {
-                commit('loadBilhete', JSON.parse(localStorage.getItem('betsNoBilhete')))
+            const storedBets = localStorage.getItem('betsNoBilhete')
+            if (storedBets) {
+                commit('loadBilhete', JSON.parse(storedBets))
             }
         },
 

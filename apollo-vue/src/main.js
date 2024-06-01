@@ -9,4 +9,5 @@ const app = createApp(App)
 
 app.config.globalProperties.emitter = emitter
 
-app.mount('#app')
+app
+.mount('#app')

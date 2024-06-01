@@ -42,10 +42,11 @@ export default {
         });
     },
     addNoBilhete(team, odd) {
+      console.log(this.addNoBilhete, 'chamou')
       const bet = {
         team: team,
         odd: odd,
-        id: this.dados.length + 1 // você pode usar um id gerado de outra forma
+        id: Date.now()
       };
       this.$store.dispatch('addNoBilhete', bet);
     },
@@ -63,20 +64,4 @@ export default {
 </script>
 
 <style scoped>
-/* @media (max-width: 576px) {
-  .card-body .d-flex {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card-body .btn {
-    width: 100%;
-    margin-bottom: 0.5rem;
-    margin: 2px;
-  }
-  .card-body .badge {
-    width: 100%;
-    text-align: center;
-    margin: 2px;
-  }
-  */
 </style>
