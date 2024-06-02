@@ -3,6 +3,8 @@
 
     <div id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
       <div class="carousel-indicators">
+ 
+<!-- CARROSSEL -->
         <button
           type="button"
           data-bs-target="#carousel"
@@ -54,7 +56,7 @@
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden"></span>
       </button>
       <button
         class="carousel-control-next"
@@ -63,17 +65,8 @@
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden"></span>
       </button>
-    </div>
-
-<!-- MINHA APOSTA -->
-    <div class="row mt-5">
-      <div class="row">
-        <div class="col-6">
-          <Bilhete />
-        </div>
-      </div>
     </div>
 
 <!-- CARD DE BILHETES -->
@@ -93,7 +86,7 @@
 </template>
 
 <script>
- import Jogos from "@/components/comuns/Jogos.vue";
+import Jogos from "@/components/comuns/Jogos.vue";
 
 export default {
   name: "esportes",
