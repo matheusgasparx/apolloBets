@@ -30,6 +30,7 @@
               <a class="nav-link" @click="navegarPara('Cassinos')">Cassinos</a>
             </li>
           </ul>
+          
           <ul class="navbar-nav ms-auto mb-4 mb-lg-0">
             <li class="nav-item p-2 mt-2">
               <a class="nav-link" @click="navegarPara('Registrar')">Registrar</a>
@@ -41,6 +42,7 @@
         </div>
       </div>
     </nav>
+    <router-view />
   </div>
 </template>
 

@@ -18,8 +18,10 @@
       aria-labelledby="offcanvasRightLabel"
     >
       <h3 class="m-5">Bilhete da aposta: </h3>
+     
       <div class="container-center">
         <div class="card" style="width: 20rem">
+          
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Primeira Bet</li>
             <li class="list-group-item">Segunda Bet</li>
@@ -29,15 +31,15 @@
       </div>
 
       <span class="card-footer mt-2" style="width: 100vh">
-        <input class="mt-1" type="number" />
+        <input class="mt-1" type="number" style="width: 20vh;"/>
         <br />
       </span>
-      <span class="card-footer mt-2" style="width: 100vh"> Total Win: </span>
+      <span class="card-footer" style="width: 100vh; background-color: lightsteelblue;"> Total Win: </span>
       <hr>
       <span>
-        <input type="radio" class="m-3" disabled> Aceitar mudança de Odds.
+        <input type="radio" class="m-3" disabled> Aceitar qualquer alteração de Odds.
       </span>
-      <Button class="btn btn-success mt-2">FAZER APOSTA</Button>
+      <Button class="btn btn-success mt-3">FAZER APOSTA</Button>
     </div>
   </div>
 </template>
@@ -47,8 +49,24 @@ import { mapState } from "vuex";
 
 export default {
   name: "Bilhete",
-
+  data: () => ({
+    dados: {}
+  }),
   methods: {
+    getDadosApi() {
+      fetch(`http://localhost:5000/events/${this.$route.params.id}`)
+        .then((response) => response.json())
+        .then((response) => {
+          this.dados = response;
+        })
+        .catch((error) => {
+          console.error("Bola fora! A página não está disponível: ", error);
+        });
+    },
+    created(){
+      this.getDadosApi()
+    },
+
     oddTotal() {
       var total = 0;
       this.betsNoBilhete.forEach((i) => {
@@ -74,6 +92,15 @@ export default {
   justify-content: center;
   align-items: center;
   height: 40vh;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 </style>
 

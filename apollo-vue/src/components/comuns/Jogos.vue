@@ -27,7 +27,7 @@ export default {
   name: "Jogos",
   data() {
     return {
-      dados: null,
+      dados: {},
       // bet: []
     };
   },

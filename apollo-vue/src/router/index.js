@@ -1,3 +1,5 @@
+import { createRouter, createWebHashHistory } from 'vue-router'
+
 import Esportes from "../components/views/Esportes.vue";
 import Cassino from "../components/views/Cassino.vue";
 import Login from "../components/views/Login.vue";
@@ -10,17 +12,17 @@ const routes = [
         component: Esportes
     },
     {
-        path: '/Cassino',
+        path: '/cassino',
         name: Cassino,
         component: Cassino
     },
     {
-        path: '/Login',
+        path: '/login',
         name: Login,
         component: Login
     },
     {
-        path: '/Registrar',
+        path: '/registrar',
         name: Registrar,
         component: Registrar
     },
