@@ -59,3 +59,7 @@ adicionar o seoMeta
 ```
 json-server --watch --port 5000 db-jogos.json
 ```
+
+state - propriedades reativas
+actions - methods
+getters = propriedades computadas
