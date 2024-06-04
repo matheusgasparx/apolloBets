@@ -4,12 +4,12 @@
       <div v-for="d in dados" :key="d.id" class="card m-3" style="width: 25rem; background-color: lightgrey">
         <div class="card-body">
           <h6 class="card-title">{{ d.league }}</h6>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-around">
             <button class="btn btn-success" @click="addNoBilhete(d.teams.home, d.odds.homeWin)"> {{ d.teams.home }}</button>
             <button class="btn btn-warning" @click="addNoBilhete('Draw', d.odds.draw)">X</button>
             <button class="btn btn-success" @click="addNoBilhete(d.teams.away, d.odds.awayWin)">{{ d.teams.away }}</button>
           </div>
-          <div class="mt-3 d-flex justify-content-between">
+          <div class="mt-3 d-flex justify-content-around">
             <span class="badge bg-secondary">{{ d.odds.homeWin }}</span>
             <span class="badge bg-secondary">{{ d.odds.draw }}</span>
             <span class="badge bg-secondary">{{ d.odds.awayWin }}</span>
@@ -61,7 +61,8 @@ export default {
       return this.betsNoBilhete.find(i => i.id == bet.id);
     }
   },
-  computed: mapState([
+  computed: 
+  mapState([
     'betsNoBilhete'
   ]),
   created() {

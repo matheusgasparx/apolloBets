@@ -31,15 +31,15 @@
       </div>
 
       <span class="card-footer mt-2" style="width: 100vh">
-        <input class="mt-1" type="number" style="width: 20vh;"/>
+        <input class="mt-1 mx-2" type="number" style="width: 20vh; border-radius: 4px;"/>
         <br />
       </span>
-      <span class="card-footer" style="width: 100vh; background-color: lightsteelblue;"> Total Win: </span>
+      <span class="card-footer mx-4" style="background-color: lightsteelblue; border-radius: 10px;"> Total Win: </span>
       <hr>
       <span>
-        <input type="radio" class="m-3" disabled> Aceitar qualquer alteração de Odds.
+        <input type="radio" class="m-3 mx-4" disabled> Aceitar qualquer alteração de Odds.
       </span>
-      <Button class="btn btn-success mt-3">FAZER APOSTA</Button>
+      <Button class="btn btn-success mt-3 mx-4">FAZER APOSTA</Button>
     </div>
   </div>
 </template>
@@ -60,7 +60,7 @@ export default {
           this.dados = response;
         })
         .catch((error) => {
-          console.error("Bola fora! A página não está disponível: ", error);
+          console.error("Bola fora! A página não está disponível. ", error);
         });
     },
     created(){
