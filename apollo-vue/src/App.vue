@@ -4,6 +4,7 @@
     <Conteudo v-if="visibilidade" :conteudo="componente"></Conteudo>
     <Bilhete></Bilhete>
     <Rodape></Rodape>
+
   </div>
 </template>
 
@@ -21,7 +22,7 @@ export default {
     visibilidade: true,
     componente: 'Esporte'
   }),
-  created() {
+  created() {  
     axios
       .get("http://localhost:5000/events")
       .then(response => {

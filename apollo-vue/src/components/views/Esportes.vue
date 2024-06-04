@@ -70,17 +70,19 @@
     </div>
 
 <!-- CARD DE BILHETES -->
-    <div style="display: flex; flex-direction: row;">
-        <div style="flex-basis: 50%; margin: 10px;">
-          <Jogos></Jogos>
-        </div>
-        <div style="flex-basis: 50%; margin: 10px;">
-          <Jogos></Jogos>
-        </div>
-        <div style="flex-basis: 50%; margin: 10px;">
-          <Jogos></Jogos>
-        </div>
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-4">
+        <Jogos></Jogos>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <Jogos></Jogos>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <Jogos></Jogos>
+      </div>
     </div>
+</div>
 
   </div>
 </template>
@@ -109,5 +111,5 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 </style>
