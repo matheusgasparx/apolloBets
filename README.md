@@ -1,1 +1,1 @@
-<h1>Projeto Bet => Nuxt e Vue 3</h1>
+<h1>Projeto Bet => Vue 3</h1>
