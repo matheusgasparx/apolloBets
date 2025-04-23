@@ -1,1 +1,3 @@
-<h1>Projeto Bet => Vue 3</h1>
+<h1>Bet Project</h1>
+
+Just analyzing Vue3
